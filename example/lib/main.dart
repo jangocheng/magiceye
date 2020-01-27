@@ -23,17 +23,17 @@ class MyApp extends StatelessWidget {
           title: const Text('MagicEye'),
         ),
         body: Center(
-          child: LoucoButton(),
+          child: PictureTaker(),
         ),
       ),
     );
   }
 }
 
-class LoucoButton extends StatelessWidget {
-  final StreamController<File> file = StreamController.broadcast();
+class PictureTaker extends StatelessWidget {
+  final StreamController<File> file = StreamController<File>.broadcast();
 
-  LoucoButton({
+  PictureTaker({
     Key key,
   }) : super(key: key);
 
