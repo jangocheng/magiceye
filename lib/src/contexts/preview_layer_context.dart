@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:rxdart/rxdart.dart';
 
 import '../enums/device_direction.dart';
@@ -15,8 +14,7 @@ class PreviewLayerContext {
   final BehaviorSubject<DeviceDirection> direction;
 
   const PreviewLayerContext({
-    @required this.allowedDirections,
-    @required this.direction,
-  })  : assert(allowedDirections != null),
-        assert(direction != null);
+    required this.allowedDirections,
+    required this.direction,
+  });
 }

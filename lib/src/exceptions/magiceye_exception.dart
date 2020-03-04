@@ -6,5 +6,5 @@ class MagicEyeException implements Exception {
   /// The actual source input which caused the error.
   final Object source;
 
-  MagicEyeException({this.message, this.source});
+  MagicEyeException({required this.message, required this.source});
 }
